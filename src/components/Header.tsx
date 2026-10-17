@@ -15,10 +15,7 @@ export const Header: React.FC<HeaderProps> = ({ onBookClick, onInstallClick }) =
   if (!tenant) return null;
 
   const isSample = tenant.status === 'sample';
-  const mapUrl =
-    tenant.slug === 'na-massazh'
-      ? 'https://yandex.kz/maps/org/na_massazh/155086499918/gallery/?ll=37.605565%2C55.753549&z=15'
-      : `https://yandex.ru/maps/?text=${encodeURIComponent(`${tenant.city} ${tenant.address}`)}`;
+  const mapUrl = `https://yandex.ru/maps/?text=${encodeURIComponent(`${tenant.city} ${tenant.address}`)}`;
 
   const handleHeroBookClick = () => {
     if (onBookClick) {

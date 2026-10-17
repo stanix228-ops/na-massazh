@@ -368,21 +368,21 @@ describe('Beauty Booking Engine & Multi-Tenant Core Tests', () => {
     expect(cfg.chatId).toBe('987654321');
   });
 
-  it('12. Flagship studio НА МАССАЖ (na-massazh) loads complete price list, photos, and books with options', async () => {
+  it('12. Universal Flagship studio СТУДИЯ МАССАЖА & SPA (na-massazh) loads complete price list, photos, and books with options', async () => {
     const naMassazh = getTenantBySlug('na-massazh');
     expect(naMassazh).toBeDefined();
-    expect(naMassazh!.name).toBe('НА МАССАЖ');
+    expect(naMassazh!.name).toBe('СТУДИЯ МАССАЖА & SPA');
     expect(naMassazh!.city).toBe('Москва');
     expect(naMassazh!.currency).toBe('RUB');
-    expect(naMassazh!.services.length).toBe(22);
+    expect(naMassazh!.services.length).toBe(18);
     expect(naMassazh!.options.length).toBe(7);
     expect(naMassazh!.masters.length).toBe(4);
-    expect(naMassazh!.assets.galleryItems.length).toBe(11);
+    expect(naMassazh!.assets.galleryItems.length).toBe(8);
 
-    const trialBody = naMassazh!.services[0]; // Пробный сеанс массажа тела (55 мин) — 3000 ₽
-    const vacuumOption = naMassazh!.options[0]; // Вакуумные банки (+15 мин) — 500 ₽
-    expect(trialBody.price).toBe(3000);
-    expect(vacuumOption.price).toBe(500);
+    const trialBody = naMassazh!.services[0]; // Пробный сеанс массажа тела (60 мин) — 2500 ₽
+    const stoneOption = naMassazh!.options[0]; // Прогревание горячими базальтовыми камнями (+15 мин) — 700 ₽
+    expect(trialBody.price).toBe(2500);
+    expect(stoneOption.price).toBe(700);
 
     const targetDate = new Date();
     targetDate.setDate(targetDate.getDate() + 3);
@@ -391,7 +391,7 @@ describe('Beauty Booking Engine & Multi-Tenant Core Tests', () => {
     const slots = await BookingEngine.getAvailableSlots(
       'na-massazh',
       trialBody.id,
-      [vacuumOption.id],
+      [stoneOption.id],
       naMassazh!.masters[0].id,
       dateStr
     );
@@ -400,16 +400,16 @@ describe('Beauty Booking Engine & Multi-Tenant Core Tests', () => {
     const booked = await BookingEngine.createBooking({
       tenantSlug: 'na-massazh',
       serviceId: trialBody.id,
-      optionIds: [vacuumOption.id],
+      optionIds: [stoneOption.id],
       masterId: naMassazh!.masters[0].id,
       startAt: slots[0].datetime,
-      clientName: 'Екатерина Арбатская',
-      clientPhone: '+7 (925) 135-70-70',
+      clientName: 'Екатерина Соколова',
+      clientPhone: '+7 (999) 000-70-70',
     });
 
     const fetched = await BookingEngine.lookupBooking('na-massazh', booked.accessToken);
     expect(fetched).not.toBeNull();
-    expect(fetched!.total_price).toBe(3500);
-    expect(fetched!.studio.name).toBe('НА МАССАЖ');
+    expect(fetched!.total_price).toBe(3200);
+    expect(fetched!.studio.name).toBe('СТУДИЯ МАССАЖА & SPA');
   });
 });

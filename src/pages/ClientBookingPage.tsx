@@ -283,18 +283,6 @@ export function ClientBookingPage() {
           <p className="text-[11px] text-neutral-500">
             {tenant.address} · {tenant.phone}
           </p>
-          {tenant.slug === 'na-massazh' && (
-            <div className="pt-1">
-              <a
-                href="https://yandex.kz/maps/org/na_massazh/155086499918/gallery/?ll=37.605565%2C55.753549&z=15"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-[11px] text-neutral-300 hover:text-white transition-colors underline underline-offset-4"
-              >
-                <span>★ 5.0 на Яндекс Картах · Награда «Хорошее место 2026»</span>
-              </a>
-            </div>
-          )}
           <div className="pt-2">
             <Link
               to={`/s/${tenant.slug}/owner/login`}
