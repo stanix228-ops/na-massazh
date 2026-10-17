@@ -1,0 +1,158 @@
+@import "tailwindcss";
+@import "@astryxdesign/theme-neutral/theme.css";
+
+@layer base {
+  :root {
+    --tenant-accent: #FFFFFF;
+    --tenant-accent-rgb: 255, 255, 255;
+    --tenant-accent-secondary: #E2E2E8;
+    --tenant-bg: #050507;
+    --tenant-surface: #0D0D11;
+    --tenant-card: #0D0D11;
+    --tenant-card-border: rgba(255, 255, 255, 0.12);
+    --tenant-text: #FFFFFF;
+    --tenant-muted: #8E8E93;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Astryx Theme Tokens Binding */
+    --color-accent: var(--tenant-accent, #FFFFFF);
+    --color-text-accent: var(--tenant-accent, #FFFFFF);
+    --color-icon-accent: var(--tenant-accent, #FFFFFF);
+    --color-background-body: var(--tenant-bg, #050507);
+    --color-background-surface: var(--tenant-surface, #0D0D11);
+    --color-background-card: var(--tenant-card, #0D0D11);
+    --color-background-popover: #141418;
+    --color-text-primary: var(--tenant-text, #FFFFFF);
+    --color-text-secondary: var(--tenant-muted, #8E8E93);
+    --color-border: var(--tenant-card-border, rgba(255, 255, 255, 0.12));
+  }
+
+  [data-astryx-theme] {
+    --color-accent: var(--tenant-accent, #FFFFFF);
+    --color-text-accent: var(--tenant-accent, #FFFFFF);
+    --color-icon-accent: var(--tenant-accent, #FFFFFF);
+    --color-background-body: var(--tenant-bg, #050507);
+    --color-background-surface: var(--tenant-surface, #0D0D11);
+    --color-background-card: var(--tenant-card, #0D0D11);
+    --color-text-primary: var(--tenant-text, #FFFFFF);
+    --color-text-secondary: var(--tenant-muted, #8E8E93);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    overscroll-behavior-y: none;
+    background-color: var(--tenant-bg, #000000);
+  }
+
+  body {
+    background-color: var(--tenant-bg, #000000);
+    color: var(--tenant-text, #FFFFFF);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    padding-bottom: calc(80px + env(safe-area-inset-bottom, 16px));
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--tenant-accent, #4690FF);
+    outline-offset: 2px;
+  }
+}
+
+/* Glass Surface Styling (True Glass & Fallback) */
+.glass-surface {
+  background: rgba(13, 13, 17, 0.75);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.7), inset 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.glass-btn {
+  background: rgba(18, 18, 22, 0.6);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.45);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.glass-btn:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+.glass-btn:active {
+  transform: scale(0.97);
+}
+
+/* Chanel Noire Luxury Card */
+.chanel-card {
+  background-color: #0D0D11;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08), 0 12px 32px -8px rgba(0, 0, 0, 0.7);
+}
+
+/* Scroll reveal sections (safe default visible) */
+.reveal-section {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.reveal-section.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility: respect user prefers-reduced-motion and prefers-reduced-transparency */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-section {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass-surface, .glass-btn {
+    background: #141418 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+  }
+}
+
+/* Safe area padding utilities */
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
