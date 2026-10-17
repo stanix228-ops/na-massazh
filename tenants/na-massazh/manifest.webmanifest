@@ -1,14 +1,14 @@
 {
   "id": "/s/na-massazh/",
-  "name": "НА МАССАЖ",
-  "short_name": "НА МАССАЖ",
-  "description": "Студия массажа, SPA и коррекции фигуры на Арбате · Ручной массаж тела и лица",
+  "name": "СТУДИЯ МАССАЖА & SPA",
+  "short_name": "СТУДИЯ МАССА",
+  "description": "Пространство ручного массажа тела и лица, SPA-ритуалов и коррекции фигуры · Онлайн-запись 24/7",
   "start_url": "/s/na-massazh/",
   "scope": "/s/na-massazh/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#060508",
-  "theme_color": "#D9468F",
+  "background_color": "#060608",
+  "theme_color": "#D4A373",
   "icons": [
     {
       "src": "/tenants/na-massazh/icon-192.png",
