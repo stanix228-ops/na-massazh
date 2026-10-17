@@ -253,11 +253,11 @@ export function ClientBookingPage() {
           <div className="grid grid-cols-2 gap-3 text-xs text-neutral-200">
             <div className="flex items-center gap-2">
               <Coffee size={16} weight="duotone" className="text-white" />
-              <span>Specialty кофе и чай</span>
+              <span>Свежий чай, кофе и вода</span>
             </div>
             <div className="flex items-center gap-2">
               <ShieldCheck size={16} weight="duotone" className="text-white" />
-              <span>Стерилизация СанПиН</span>
+              <span>Одноразовое бельё и простыни</span>
             </div>
             <div className="flex items-center gap-2">
               <WifiHigh size={16} weight="duotone" className="text-white" />
@@ -265,9 +265,14 @@ export function ClientBookingPage() {
             </div>
             <div className="flex items-center gap-2">
               <Heart size={16} weight="duotone" className="text-white" />
-              <span>Гарантия на покрытие 7 дней</span>
+              <span>Отдельные уютные кабинеты</span>
             </div>
           </div>
+          {tenant.instructions && (
+            <p className="text-[11px] text-neutral-400 leading-relaxed pt-2 border-t border-white/10">
+              {tenant.instructions}
+            </p>
+          )}
         </section>
 
         {/* Studio Footer */}
@@ -278,6 +283,18 @@ export function ClientBookingPage() {
           <p className="text-[11px] text-neutral-500">
             {tenant.address} · {tenant.phone}
           </p>
+          {tenant.slug === 'na-massazh' && (
+            <div className="pt-1">
+              <a
+                href="https://yandex.kz/maps/org/na_massazh/155086499918/gallery/?ll=37.605565%2C55.753549&z=15"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[11px] text-neutral-300 hover:text-white transition-colors underline underline-offset-4"
+              >
+                <span>★ 5.0 на Яндекс Картах · Награда «Хорошее место 2026»</span>
+              </a>
+            </div>
+          )}
           <div className="pt-2">
             <Link
               to={`/s/${tenant.slug}/owner/login`}

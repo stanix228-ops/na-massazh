@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getTenantBySlug } from '../data/tenants';
+import { getAssetUrl } from '../lib/assets';
 import type { BusinessConfig, Service, Master } from '../../scripts/schema';
 
 interface TenantContextValue {
@@ -25,7 +26,7 @@ const TenantContext = createContext<TenantContextValue>({
 
 export function TenantProvider({
   children,
-  defaultSlug = 'ayza-beauty-space',
+  defaultSlug = 'na-massazh',
 }: {
   children: React.ReactNode;
   defaultSlug?: string;
@@ -80,7 +81,7 @@ export function TenantProvider({
       manifestLink.rel = 'manifest';
       document.head.appendChild(manifestLink);
     }
-    manifestLink.href = `/tenants/${found.slug}/manifest.webmanifest`;
+    manifestLink.href = getAssetUrl(`/tenants/${found.slug}/manifest.webmanifest`);
 
     // Dynamic CSS Custom Properties
     const root = document.documentElement;

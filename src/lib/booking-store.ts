@@ -109,6 +109,65 @@ class MemoryBookingStore {
     const today = new Date();
     const dateStr = today.toISOString().split('T')[0];
 
+    // Seed sample completed & confirmed bookings for НА МАССАЖ (Go2massage)
+    const naMassazh = getTenantBySlug('na-massazh');
+    if (naMassazh) {
+      const master1 = naMassazh.masters[0]; // Елена
+      const service1 = naMassazh.services[3]; // Массаж тела 55 мин (3500 ₽)
+      const startM1 = `${dateStr}T11:00:00.000Z`;
+      const endM1 = `${dateStr}T12:05:00.000Z`;
+
+      this.bookings.push({
+        id: 'seed-nm-1',
+        booking_number: 'MASS-1017-501',
+        tenant_id: naMassazh.id,
+        status: 'COMPLETED',
+        start_at: startM1,
+        end_at: endM1,
+        total_price: service1.price,
+        token_hash: 'seed_nm_hash_1',
+        client: {
+          id: 'c-nm-1',
+          name: 'Мария Соколова',
+          phone: '+7 (925) 701-12-34',
+        },
+        master: {
+          id: master1.id,
+          name: master1.name,
+          title: master1.title,
+          avatar_url: master1.avatarUrl,
+        },
+        workplace: {
+          id: naMassazh.workplaces[0].id,
+          name: naMassazh.workplaces[0].name,
+        },
+        services: [{
+          id: service1.id,
+          name: service1.name,
+          price: service1.price,
+          duration_min: service1.durationMin,
+        }],
+        options: [],
+        studio: {
+          name: naMassazh.name,
+          address: naMassazh.address,
+          phone: naMassazh.phone,
+          instructions: naMassazh.instructions,
+        },
+      });
+
+      this.occupancies.push({
+        id: 'occ-nm-1',
+        tenant_id: naMassazh.id,
+        resource_type: 'MASTER',
+        resource_id: master1.id,
+        booking_id: 'seed-nm-1',
+        reason: 'BOOKING',
+        start_at: startM1,
+        end_at: endM1,
+      });
+    }
+
     // Seed sample completed & confirmed bookings for LUMI NAIL STUDIO
     const lumi = getTenantBySlug('lumi-nail-studio');
     if (lumi) {

@@ -1,6 +1,6 @@
 -- ========================================================
 -- PUBLISH TENANT: AYZA BEAUTY SPACE (ayza-beauty-space)
--- Generated automatically at: 2026-10-16T09:11:29.002Z
+-- Generated automatically at: 2026-10-17T08:38:16.664Z
 -- Preserves existing bookings, clients, and history!
 -- ========================================================
 

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useTenant } from '../context/TenantContext';
 import { getAssetUrl } from '../lib/assets';
-import { MapPin, Phone, Clock, CalendarPlus, Sparkle, DeviceMobile } from '@phosphor-icons/react';
+import { MapPin, Phone, Clock, CalendarPlus, Sparkle, DeviceMobile, Star, PaperPlaneTilt } from '@phosphor-icons/react';
 
 interface HeaderProps {
   onBookClick?: () => void;
@@ -15,6 +15,10 @@ export const Header: React.FC<HeaderProps> = ({ onBookClick, onInstallClick }) =
   if (!tenant) return null;
 
   const isSample = tenant.status === 'sample';
+  const mapUrl =
+    tenant.slug === 'na-massazh'
+      ? 'https://yandex.kz/maps/org/na_massazh/155086499918/gallery/?ll=37.605565%2C55.753549&z=15'
+      : `https://yandex.ru/maps/?text=${encodeURIComponent(`${tenant.city} ${tenant.address}`)}`;
 
   const handleHeroBookClick = () => {
     if (onBookClick) {
@@ -43,7 +47,7 @@ export const Header: React.FC<HeaderProps> = ({ onBookClick, onInstallClick }) =
           <img
             src={getAssetUrl(tenant.assets.hero)}
             alt={tenant.name}
-            className="w-full h-full object-cover object-center filter brightness-[0.6] transition-transform duration-700"
+            className="w-full h-full object-cover object-center filter brightness-[0.65] transition-transform duration-700"
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-b from-neutral-900 via-neutral-950 to-[#050507]" />
@@ -53,8 +57,19 @@ export const Header: React.FC<HeaderProps> = ({ onBookClick, onInstallClick }) =
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-[#050507] pointer-events-none" />
         <div className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#050507] via-[#050507]/80 to-transparent pointer-events-none" />
 
-        {/* Top bar with PWA install */}
-        <div className="absolute top-3 right-4 z-20 flex items-center gap-2">
+        {/* Top bar with Yandex Maps rating badge & PWA install */}
+        <div className="absolute top-3 inset-x-4 z-20 flex items-center justify-between gap-2">
+          <a
+            href={mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold bg-black/65 text-white border border-white/20 backdrop-blur-md hover:bg-black/80 transition-all"
+            title="Открыть в Яндекс Картах"
+          >
+            <Star size={13} weight="fill" className="text-amber-400" />
+            <span>5.0 · Яндекс Карты</span>
+          </a>
+
           {onInstallClick && (
             <button
               type="button"
@@ -111,10 +126,15 @@ export const Header: React.FC<HeaderProps> = ({ onBookClick, onInstallClick }) =
 
         {/* Studio Contacts & Schedule */}
         <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-4 text-xs text-neutral-300 pt-3 mt-3 border-t border-white/10">
-          <div className="flex items-center gap-1.5">
-            <MapPin size={15} className="text-neutral-400" />
+          <a
+            href={mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 hover:text-white transition-colors underline-offset-2 hover:underline"
+          >
+            <MapPin size={15} className="text-neutral-400 flex-shrink-0" />
             <span>{tenant.address}</span>
-          </div>
+          </a>
           <div className="flex items-center gap-1.5">
             <Phone size={15} className="text-neutral-400" />
             <a href={`tel:${tenant.phone}`} className="hover:text-white transition-colors underline-offset-2 hover:underline">
@@ -124,9 +144,20 @@ export const Header: React.FC<HeaderProps> = ({ onBookClick, onInstallClick }) =
           <div className="flex items-center gap-1.5">
             <Clock size={15} className="text-neutral-400" />
             <span>
-              {tenant.businessHours?.[1]?.openTime || '09:00'} – {tenant.businessHours?.[1]?.closeTime || '20:00'}
+              {tenant.businessHours?.[1]?.openTime || '10:00'} – {tenant.businessHours?.[1]?.closeTime || '22:00'}
             </span>
           </div>
+          {tenant.slug === 'na-massazh' && (
+            <a
+              href="https://t.me/gomasssage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-neutral-300 hover:text-white transition-colors underline-offset-2 hover:underline"
+            >
+              <PaperPlaneTilt size={14} className="text-[#2AABEE]" />
+              <span>Telegram</span>
+            </a>
+          )}
         </div>
       </div>
     </header>

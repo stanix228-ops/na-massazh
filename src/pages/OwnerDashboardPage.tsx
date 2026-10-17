@@ -33,6 +33,19 @@ import { getOwnerCredentials, saveOwnerCredentials } from '../lib/owner-auth';
 
 // Studio photo presets for 1-click photo selection
 const STUDIO_PHOTO_PRESETS = [
+  { label: 'Массаж тела / спины (Зал)', url: '/tenants/na-massazh/images/gallery-massage-process.jpg' },
+  { label: 'Кабинет массажа №1', url: '/tenants/na-massazh/images/gallery-room-1.jpg' },
+  { label: 'Кабинет массажа №2 (Бамбук)', url: '/tenants/na-massazh/images/gallery-room-bamboo.jpg' },
+  { label: 'Лимфодренажный массаж тела', url: '/tenants/na-massazh/images/service-lymphatic-body.jpg' },
+  { label: 'Массаж и скульптурирование лица', url: '/tenants/na-massazh/images/service-face-massage.jpg' },
+  { label: 'Массаж головы и ШВЗ', url: '/tenants/na-massazh/images/service-head-massage.jpg' },
+  { label: 'Массаж стоп и SPA-обёртывание', url: '/tenants/na-massazh/images/service-spa-wrap.jpg' },
+  { label: 'Зона ресепшн Go2massage', url: '/tenants/na-massazh/images/gallery-reception.jpg' },
+  { label: 'Интерьер студии (Арт-зона)', url: '/tenants/na-massazh/images/gallery-interior-art.jpg' },
+  { label: 'Зона отдыха с цветами', url: '/tenants/na-massazh/images/gallery-lounge-tulips.jpg' },
+  { label: 'Прайс: Массаж тела', url: '/tenants/na-massazh/images/gallery-price-body.jpg' },
+  { label: 'Прайс: Массаж лица', url: '/tenants/na-massazh/images/gallery-price-face.jpg' },
+  { label: 'Прайс: Доп. услуги и SPA', url: '/tenants/na-massazh/images/gallery-price-extra.jpg' },
   { label: 'Свадебный макияж', url: '/tenants/ayza-beauty-space/images/service-wedding-makeup.jpg' },
   { label: 'Дневной макияж', url: '/tenants/ayza-beauty-space/images/service-makeup-day.jpg' },
   { label: 'Вечерний макияж', url: '/tenants/ayza-beauty-space/images/service-makeup-evening.jpg' },
@@ -87,8 +100,9 @@ const STUDIO_PHOTO_PRESETS = [
 type Tab = 'today' | 'bookings' | 'calendar' | 'stats' | 'telegram' | 'gallery' | 'services' | 'settings';
 
 export function OwnerDashboardPage() {
-  const { slug } = useParams<{ slug: string }>();
-  const { tenant, updateServices } = useTenant();
+  const { slug: paramSlug } = useParams<{ slug: string }>();
+  const { tenant, slug: contextSlug, updateServices } = useTenant();
+  const slug = paramSlug || contextSlug || 'na-massazh';
   const navigate = useNavigate();
 
   // Strict Auth Guard
@@ -136,9 +150,9 @@ export function OwnerDashboardPage() {
   // Gallery management state
   const [galleryItems, setGalleryItems] = useState<GalleryItem[]>(() => {
     return tenant?.assets?.galleryItems || [
-      { id: '1', imageUrl: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80', caption: 'Французский маникюр', displayOrder: 1 },
-      { id: '2', imageUrl: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=600&q=80', caption: 'Японский эко-уход', displayOrder: 2 },
-      { id: '3', imageUrl: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80', caption: 'Авторский дизайн', displayOrder: 3 },
+      { id: '1', imageUrl: '/tenants/na-massazh/images/gallery-reception.jpg', caption: 'Зона ресепшн Go2massage', displayOrder: 1 },
+      { id: '2', imageUrl: '/tenants/na-massazh/images/gallery-room-1.jpg', caption: 'Кабинет массажа тела', displayOrder: 2 },
+      { id: '3', imageUrl: '/tenants/na-massazh/images/gallery-massage-process.jpg', caption: 'Ручной массаж спины и ШВЗ', displayOrder: 3 },
     ];
   });
   const [newWorkUrl, setNewWorkUrl] = useState('');

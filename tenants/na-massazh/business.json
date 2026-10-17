@@ -1,0 +1,705 @@
+{
+  "id": "f8b92a10-4c7d-4e5a-9b1e-155086499918",
+  "slug": "na-massazh",
+  "name": "НА МАССАЖ",
+  "status": "published",
+  "tagline": "Студия массажа, SPA и коррекции фигуры на Арбате · Ручной массаж тела и лица",
+  "city": "Москва",
+  "address": "Большой Кисловский переулок, 1, стр. 2, этаж 3, офис 318 (м. Арбатская)",
+  "timezone": "Europe/Moscow",
+  "currency": "RUB",
+  "phone": "+7 (925) 135-70-70",
+  "minBookingNoticeMin": 60,
+  "maxBookingHorizonDays": 45,
+  "cancellationDeadlineHours": 12,
+  "instructions": "5 минут пешком от м. Арбатская, Александровский сад или Библиотека им. Ленина. Большой Кисловский переулок, д. 1, стр. 2 — поднимитесь на 3 этаж, офис 318 (вывеска «Студия массажа Go2massage»). В студии предоставляются одноразовое бельё, простыни, тапочки, свежий чай и кофе.",
+  "theme": {
+    "accentColor": "#D9468F",
+    "secondaryAccentColor": "#F5D0E6",
+    "bgColor": "#060508",
+    "cardBgColor": "#110E16",
+    "borderColor": "rgba(217, 70, 143, 0.22)",
+    "textColor": "#FFFFFF",
+    "mutedColor": "#A8A2B3",
+    "fontHeading": "Cormorant Garamond, serif",
+    "fontBody": "Inter, sans-serif"
+  },
+  "assets": {
+    "logo": "/tenants/na-massazh/images/logo.jpg",
+    "hero": "/tenants/na-massazh/images/hero.jpg",
+    "gallery": [
+      "/tenants/na-massazh/images/gallery-reception.jpg",
+      "/tenants/na-massazh/images/gallery-room-1.jpg",
+      "/tenants/na-massazh/images/gallery-massage-process.jpg",
+      "/tenants/na-massazh/images/gallery-interior-art.jpg",
+      "/tenants/na-massazh/images/gallery-room-bamboo.jpg",
+      "/tenants/na-massazh/images/gallery-lounge-tulips.jpg",
+      "/tenants/na-massazh/images/gallery-entrance.jpg",
+      "/tenants/na-massazh/images/gallery-building.jpg",
+      "/tenants/na-massazh/images/gallery-price-body.jpg",
+      "/tenants/na-massazh/images/gallery-price-face.jpg",
+      "/tenants/na-massazh/images/gallery-price-extra.jpg"
+    ],
+    "galleryItems": [
+      {
+        "id": "gal-1",
+        "imageUrl": "/tenants/na-massazh/images/gallery-reception.jpg",
+        "caption": "Зона ресепшн и встречи гостей Go2massage",
+        "displayOrder": 1
+      },
+      {
+        "id": "gal-2",
+        "imageUrl": "/tenants/na-massazh/images/gallery-room-1.jpg",
+        "caption": "Изолированный кабинет массажа тела с тёплым светом",
+        "displayOrder": 2
+      },
+      {
+        "id": "gal-3",
+        "imageUrl": "/tenants/na-massazh/images/gallery-massage-process.jpg",
+        "caption": "Глубокая ручная проработка спины и шейно-воротниковой зоны",
+        "displayOrder": 3
+      },
+      {
+        "id": "gal-4",
+        "imageUrl": "/tenants/na-massazh/images/gallery-interior-art.jpg",
+        "caption": "Уютная атмосфера и авторский интерьер студии",
+        "displayOrder": 4
+      },
+      {
+        "id": "gal-5",
+        "imageUrl": "/tenants/na-massazh/images/gallery-room-bamboo.jpg",
+        "caption": "Кабинет массажа тела и креольской бамбук-терапии",
+        "displayOrder": 5
+      },
+      {
+        "id": "gal-6",
+        "imageUrl": "/tenants/na-massazh/images/gallery-lounge-tulips.jpg",
+        "caption": "Зона отдыха с чаем, кофе и живыми цветами",
+        "displayOrder": 6
+      },
+      {
+        "id": "gal-7",
+        "imageUrl": "/tenants/na-massazh/images/gallery-entrance.jpg",
+        "caption": "Вход в студию «На массаж» · 3 этаж, кабинет 318",
+        "displayOrder": 7
+      },
+      {
+        "id": "gal-8",
+        "imageUrl": "/tenants/na-massazh/images/gallery-building.jpg",
+        "caption": "Большой Кисловский переулок, 1, стр. 2 (5 мин от м. Арбатская)",
+        "displayOrder": 8
+      },
+      {
+        "id": "gal-9",
+        "imageUrl": "/tenants/na-massazh/images/gallery-price-body.jpg",
+        "caption": "Прайс студии в зале: Массаж тела и абонементы",
+        "displayOrder": 9
+      },
+      {
+        "id": "gal-10",
+        "imageUrl": "/tenants/na-massazh/images/gallery-price-face.jpg",
+        "caption": "Прайс студии в зале: Массаж лица и курсы",
+        "displayOrder": 10
+      },
+      {
+        "id": "gal-11",
+        "imageUrl": "/tenants/na-massazh/images/gallery-price-extra.jpg",
+        "caption": "Прайс студии в зале: Дополнительные SPA-процедуры",
+        "displayOrder": 11
+      }
+    ]
+  },
+  "infoCards": [
+    {
+      "id": "info-1",
+      "title": "Ежедневно 10:00–22:00",
+      "description": "5 минут от м. Арбатская · Большой Кисловский пер., 1, стр. 2, 3 этаж, офис 318",
+      "icon": "Clock"
+    },
+    {
+      "id": "info-2",
+      "title": "Рейтинг 5.0 ★ Хорошее место",
+      "description": "Награда Яндекса «Хорошее место 2026» · Мастера с медобразованием и опытом от 5 лет",
+      "icon": "ShieldCheck"
+    },
+    {
+      "id": "info-3",
+      "title": "Отдельные кабинеты & SPA",
+      "description": "Изолированные уютные кабинеты без ширм, одноразовые расходники и премиум-масла",
+      "icon": "Sparkles"
+    }
+  ],
+  "businessHours": [
+    { "dayOfWeek": 0, "openTime": "10:00", "closeTime": "22:00", "isClosed": false },
+    { "dayOfWeek": 1, "openTime": "10:00", "closeTime": "22:00", "isClosed": false },
+    { "dayOfWeek": 2, "openTime": "10:00", "closeTime": "22:00", "isClosed": false },
+    { "dayOfWeek": 3, "openTime": "10:00", "closeTime": "22:00", "isClosed": false },
+    { "dayOfWeek": 4, "openTime": "10:00", "closeTime": "22:00", "isClosed": false },
+    { "dayOfWeek": 5, "openTime": "10:00", "closeTime": "22:00", "isClosed": false },
+    { "dayOfWeek": 6, "openTime": "10:00", "closeTime": "22:00", "isClosed": false }
+  ],
+  "workplaces": [
+    {
+      "id": "10000000-0000-4000-8000-000000000001",
+      "name": "Массажный кабинет №1 (Тело и SPA)",
+      "type": "UNIVERSAL",
+      "isActive": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000002",
+      "name": "Массажный кабинет №2 (Спортивный и коррекция фигуры)",
+      "type": "UNIVERSAL",
+      "isActive": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000003",
+      "name": "Кабинет массажа лица и SPA-ухода №3",
+      "type": "UNIVERSAL",
+      "isActive": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "20000000-0000-4000-8000-000000000001",
+      "name": "Пробный сеанс",
+      "displayOrder": 1,
+      "isActive": true
+    },
+    {
+      "id": "20000000-0000-4000-8000-000000000002",
+      "name": "Массаж тела",
+      "displayOrder": 2,
+      "isActive": true
+    },
+    {
+      "id": "20000000-0000-4000-8000-000000000003",
+      "name": "Мужской и спортивный",
+      "displayOrder": 3,
+      "isActive": true
+    },
+    {
+      "id": "20000000-0000-4000-8000-000000000004",
+      "name": "Массаж лица",
+      "displayOrder": 4,
+      "isActive": true
+    },
+    {
+      "id": "20000000-0000-4000-8000-000000000005",
+      "name": "Голова, стопы и SPA",
+      "displayOrder": 5,
+      "isActive": true
+    },
+    {
+      "id": "20000000-0000-4000-8000-000000000006",
+      "name": "Абонементы и курсы",
+      "displayOrder": 6,
+      "isActive": true
+    }
+  ],
+  "services": [
+    {
+      "id": "30000000-0000-4000-8000-000000000001",
+      "categoryId": "20000000-0000-4000-8000-000000000001",
+      "name": "Пробный сеанс массажа тела (55 мин)",
+      "description": "Специальная цена первого визита для знакомства со студией и мастером: комплексная проработка тела, снятие зажимов, отёчности и усталости (акция действует для новых гостей — девушек).",
+      "imageUrl": "/tenants/na-massazh/images/gallery-room-1.jpg",
+      "price": 3000,
+      "durationMin": 55,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000002",
+      "categoryId": "20000000-0000-4000-8000-000000000001",
+      "name": "Пробный сеанс массажа лица (30 мин)",
+      "description": "Знакомство с техниками скульптурирующего и лимфодренажного массажа лица: снятие отёчности, свежий цвет лица и мгновенный тонус кожи.",
+      "imageUrl": "/tenants/na-massazh/images/service-face-massage.jpg",
+      "price": 2000,
+      "durationMin": 30,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000003",
+      "categoryId": "20000000-0000-4000-8000-000000000001",
+      "name": "Пробный комплекс: тело 55 мин + лицо 30 мин",
+      "description": "Полная перезагрузка на первом визите: 55 минут глубокого или расслабляющего массажа всего тела + 30 минут лифтинг-массажа лица.",
+      "imageUrl": "/tenants/na-massazh/images/gallery-reception.jpg",
+      "price": 5000,
+      "durationMin": 85,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000004",
+      "categoryId": "20000000-0000-4000-8000-000000000002",
+      "name": "Массаж тела 55 мин (Общий / Лимфодренажный / Антицеллюлитный / Релакс)",
+      "description": "Комплексная процедура на выбор по вашему запросу: классический оздоровительный, антицеллюлитный, лимфодренажный или расслабляющий массаж. Снимает спазмы в спине и ШВЗ, ускоряет лимфоток.",
+      "imageUrl": "/tenants/na-massazh/images/gallery-massage-process.jpg",
+      "price": 3500,
+      "durationMin": 55,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 4
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000005",
+      "categoryId": "20000000-0000-4000-8000-000000000002",
+      "name": "Массаж тела 85 мин (Глубокая комплексная проработка)",
+      "description": "Расширенный полуторачасовой сеанс массажа всего тела от стоп до макушки. Детальная проработка триггерных зон спины, шеи и поясницы, глубокий лимфодренаж и восстановление ресурса.",
+      "imageUrl": "/tenants/na-massazh/images/service-lymphatic-body.jpg",
+      "price": 5000,
+      "durationMin": 85,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 5
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000006",
+      "categoryId": "20000000-0000-4000-8000-000000000002",
+      "name": "Массаж тела 55 мин — Топ-мастер",
+      "description": "Авторский сеанс у топ-мастера студии с медицинским образованием: индивидуальное сочетание миофасциальных, оздоровительных и моделирующих техник без боли и синяков.",
+      "imageUrl": "/tenants/na-massazh/images/gallery-room-bamboo.jpg",
+      "price": 4500,
+      "durationMin": 55,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 6
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000007",
+      "categoryId": "20000000-0000-4000-8000-000000000002",
+      "name": "Массаж тела 85 мин — Топ-мастер",
+      "description": "Максимальная 85-минутная проработка тела у топ-мастера студии: глубокое снятие хронических мышечных блоков, коррекция силуэта и полное обновление организма.",
+      "imageUrl": "/tenants/na-massazh/images/gallery-interior-art.jpg",
+      "price": 6500,
+      "durationMin": 85,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 7
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000008",
+      "categoryId": "20000000-0000-4000-8000-000000000003",
+      "name": "Мужской силовой / спортивный массаж (55 мин)",
+      "description": "Интенсивный оздоровительный массаж для мужчин: глубокая проработка мышц спины, плечевого пояса, шеи и ног. Снимает напряжение после зала, спорта и сидячей работы.",
+      "imageUrl": "/tenants/na-massazh/images/gallery-massage-process.jpg",
+      "price": 4000,
+      "durationMin": 55,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 8
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000009",
+      "categoryId": "20000000-0000-4000-8000-000000000003",
+      "name": "Мужской силовой / спортивный массаж (85 мин)",
+      "description": "Полуторачасовой профессиональный сеанс, сочетающий техники глубокотканного спортивного и восстанавливающего массажа. Повышает выносливость, эластичность мышц и снимает зажимы.",
+      "imageUrl": "/tenants/na-massazh/images/gallery-room-bamboo.jpg",
+      "price": 5500,
+      "durationMin": 85,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 9
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000010",
+      "categoryId": "20000000-0000-4000-8000-000000000003",
+      "name": "Мужской массаж 55 мин — Топ-мастер",
+      "description": "Глубокая спортивная и триггерная миофасциальная проработка у топ-мастера студии.",
+      "imageUrl": "/tenants/na-massazh/images/gallery-room-1.jpg",
+      "price": 5000,
+      "durationMin": 55,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 10
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000011",
+      "categoryId": "20000000-0000-4000-8000-000000000003",
+      "name": "Мужской массаж 85 мин — Топ-мастер",
+      "description": "Расширенный 85-минутный сеанс силовой реабилитации и спортивного восстановления у топ-мастера студии.",
+      "imageUrl": "/tenants/na-massazh/images/gallery-massage-process.jpg",
+      "price": 7000,
+      "durationMin": 85,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 11
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000012",
+      "categoryId": "20000000-0000-4000-8000-000000000004",
+      "name": "Массаж лица 30 мин (Лимфодренажный / Классический)",
+      "description": "Снимает утреннюю и хроническую отёчность, расслабляет мимические зажимы, улучшает микроциркуляцию и возвращает коже здоровое сияние.",
+      "imageUrl": "/tenants/na-massazh/images/service-face-massage.jpg",
+      "price": 2500,
+      "durationMin": 30,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 12
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000013",
+      "categoryId": "20000000-0000-4000-8000-000000000004",
+      "name": "Массаж лица 50 мин (Скульптурирующий лифтинг)",
+      "description": "Глубокая проработка мышечного каркаса лица, шеи и зоны декольте. Чёткий овал лица, разглаживание носогубных складок и выраженный естественный лифтинг-эффект.",
+      "imageUrl": "/tenants/na-massazh/images/service-face-massage.jpg",
+      "price": 3000,
+      "durationMin": 50,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 13
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000014",
+      "categoryId": "20000000-0000-4000-8000-000000000004",
+      "name": "Массаж лица 30 мин — Топ-мастер",
+      "description": "Авторский экспресс-лифтинг и лимфодренаж лица от топ-мастера косметолога-эстетиста.",
+      "imageUrl": "/tenants/na-massazh/images/service-face-massage.jpg",
+      "price": 3500,
+      "durationMin": 30,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 14
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000015",
+      "categoryId": "20000000-0000-4000-8000-000000000004",
+      "name": "Массаж лица 50 мин — Топ-мастер",
+      "description": "Полная 50-минутная скульптурно-миофасциальная пластика лица, шеи, декольте и апоневроза головы у топ-мастера студии.",
+      "imageUrl": "/tenants/na-massazh/images/service-face-massage.jpg",
+      "price": 4000,
+      "durationMin": 50,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 15
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000016",
+      "categoryId": "20000000-0000-4000-8000-000000000005",
+      "name": "Массаж головы и шейно-воротниковой зоны (30 мин)",
+      "description": "Усиливает приток кислорода, снимает стрессовую нагрузку, мигрени и усталость от экранов, улучшает сон и стимулирует рост волос.",
+      "imageUrl": "/tenants/na-massazh/images/service-head-massage.jpg",
+      "price": 1500,
+      "durationMin": 30,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 16
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000017",
+      "categoryId": "20000000-0000-4000-8000-000000000005",
+      "name": "Рефлекторный массаж стоп и голеней (30 мин)",
+      "description": "Снятие тяжести и усталости в ногах, проработка биологически активных точек стопы, уменьшение вечерних отёков и глубокое расслабление.",
+      "imageUrl": "/tenants/na-massazh/images/service-spa-wrap.jpg",
+      "price": 1500,
+      "durationMin": 30,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 17
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000018",
+      "categoryId": "20000000-0000-4000-8000-000000000005",
+      "name": "SPA-обёртывание Aravia или Morizo (30 мин)",
+      "description": "Профессиональные составы Aravia и Morizo выводят лишнюю жидкость, ускоряют клеточный метаболизм, уменьшают проявления целлюлита и делают кожу бархатной.",
+      "imageUrl": "/tenants/na-massazh/images/service-spa-wrap.jpg",
+      "price": 1500,
+      "durationMin": 30,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 18
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000019",
+      "categoryId": "20000000-0000-4000-8000-000000000006",
+      "name": "Абонемент: 5 сеансов массажа тела (55 мин)",
+      "description": "Курс из 5 сеансов общего, лимфодренажного или антицеллюлитного массажа тела по выгодной цене (2 200 ₽ за сеанс). Оформление и первый сеанс в день визита.",
+      "imageUrl": "/tenants/na-massazh/images/gallery-price-body.jpg",
+      "price": 11000,
+      "durationMin": 55,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 19
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000020",
+      "categoryId": "20000000-0000-4000-8000-000000000006",
+      "name": "Абонемент: 10 сеансов массажа тела (55 мин)",
+      "description": "Полный курс из 10 сеансов массажа тела по 55 минут для стойкого оздоровления спины или коррекции фигуры (2 100 ₽ за сеанс).",
+      "imageUrl": "/tenants/na-massazh/images/gallery-price-body.jpg",
+      "price": 21000,
+      "durationMin": 55,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 20
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000021",
+      "categoryId": "20000000-0000-4000-8000-000000000006",
+      "name": "Абонемент: 5 сеансов массажа лица (30 мин)",
+      "description": "Курс из 5 процедур лимфодренажного и тонизирующего массажа лица по 30 минут для стойкого снятия отёков и свежести кожи.",
+      "imageUrl": "/tenants/na-massazh/images/gallery-price-face.jpg",
+      "price": 11000,
+      "durationMin": 30,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 21
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000022",
+      "categoryId": "20000000-0000-4000-8000-000000000006",
+      "name": "Абонемент: 5 сеансов массажа лица (50 мин)",
+      "description": "Интенсивный курс скульптурирующего лифтинг-массажа лица, шеи и декольте — 5 сеансов по 50 минут (2 700 ₽ за сеанс).",
+      "imageUrl": "/tenants/na-massazh/images/gallery-price-face.jpg",
+      "price": 13500,
+      "durationMin": 50,
+      "bufferAfterMin": 10,
+      "requiredWorkplaceType": "UNIVERSAL",
+      "isActive": true,
+      "displayOrder": 22
+    }
+  ],
+  "options": [
+    {
+      "id": "40000000-0000-4000-8000-000000000001",
+      "name": "Вакуумные банки к сеансу (+15 мин)",
+      "description": "Локальная вакуумно-баночная проработка проблемных зон или триггерных точек спины",
+      "price": 500,
+      "durationMin": 15,
+      "bufferAfterMin": 0,
+      "displayOrder": 1,
+      "isActive": true
+    },
+    {
+      "id": "40000000-0000-4000-8000-000000000002",
+      "name": "Вакуумные банки — глубокая проработка (+30 мин)",
+      "description": "Расширенная 30-минутная вакуумно-баночная терапия для мощного лимфодренажа",
+      "price": 1000,
+      "durationMin": 30,
+      "bufferAfterMin": 0,
+      "displayOrder": 2,
+      "isActive": true
+    },
+    {
+      "id": "40000000-0000-4000-8000-000000000003",
+      "name": "Массаж на профессиональном уходовом креме",
+      "description": "Использование увлажняющего и питательного SPA-крема вместо базового массажного масла",
+      "price": 500,
+      "durationMin": 0,
+      "bufferAfterMin": 0,
+      "displayOrder": 3,
+      "isActive": true
+    },
+    {
+      "id": "40000000-0000-4000-8000-000000000004",
+      "name": "Крем-ингибитор жира (вместо базового масла)",
+      "description": "Интенсивный липолитический состав для усиления эффекта антицеллюлитного массажа",
+      "price": 1500,
+      "durationMin": 0,
+      "bufferAfterMin": 0,
+      "displayOrder": 4,
+      "isActive": true
+    },
+    {
+      "id": "40000000-0000-4000-8000-000000000005",
+      "name": "SPA-обёртывание Aravia или Morizo (+30 мин)",
+      "description": "Лимфодренажное и моделирующее обёртывание профессиональными составами Aravia / Morizo",
+      "price": 1500,
+      "durationMin": 30,
+      "bufferAfterMin": 0,
+      "displayOrder": 5,
+      "isActive": true
+    },
+    {
+      "id": "40000000-0000-4000-8000-000000000006",
+      "name": "Массаж головы (+15 мин к сеансу)",
+      "description": "Расслабляющая проработка кожи головы и затылочной зоны",
+      "price": 750,
+      "durationMin": 15,
+      "bufferAfterMin": 0,
+      "displayOrder": 6,
+      "isActive": true
+    },
+    {
+      "id": "40000000-0000-4000-8000-000000000007",
+      "name": "Массаж стоп (+15 мин к сеансу)",
+      "description": "Рефлекторная проработка стоп для снятия усталости и тяжести в ногах",
+      "price": 750,
+      "durationMin": 15,
+      "bufferAfterMin": 0,
+      "displayOrder": 7,
+      "isActive": true
+    }
+  ],
+  "masters": [
+    {
+      "id": "50000000-0000-4000-8000-000000000001",
+      "name": "Елена",
+      "title": "Топ-мастер по массажу тела и реабилитации",
+      "specialization": "Глубокотканный, спортивный и оздоровительный массаж",
+      "bio": "Медицинское образование, опыт более 8 лет. Деликатная и глубокая проработка спины, шейно-воротниковой зоны и триггерных точек, силовой и спортивный массаж без боли и синяков.",
+      "avatarUrl": "/tenants/na-massazh/images/master-elena.jpg",
+      "rating": 5.0,
+      "reviewsCount": 74,
+      "displayOrder": 1,
+      "isActive": true,
+      "serviceIds": [
+        "30000000-0000-4000-8000-000000000001",
+        "30000000-0000-4000-8000-000000000003",
+        "30000000-0000-4000-8000-000000000004",
+        "30000000-0000-4000-8000-000000000005",
+        "30000000-0000-4000-8000-000000000006",
+        "30000000-0000-4000-8000-000000000007",
+        "30000000-0000-4000-8000-000000000008",
+        "30000000-0000-4000-8000-000000000009",
+        "30000000-0000-4000-8000-000000000010",
+        "30000000-0000-4000-8000-000000000011",
+        "30000000-0000-4000-8000-000000000016",
+        "30000000-0000-4000-8000-000000000017",
+        "30000000-0000-4000-8000-000000000019",
+        "30000000-0000-4000-8000-000000000020"
+      ],
+      "schedule": [
+        { "dayOfWeek": 0, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 1, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 2, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 3, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 4, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 5, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 6, "startTime": "10:00", "endTime": "22:00", "isDayOff": false }
+      ]
+    },
+    {
+      "id": "50000000-0000-4000-8000-000000000002",
+      "name": "Зара",
+      "title": "Топ-мастер коррекции фигуры и лимфодренажа",
+      "specialization": "Антицеллюлитный, лимфодренажный массаж и SPA-обёртывания",
+      "bio": "Опыт 6 лет. Эксперт по антицеллюлитному, скульптурирующему и лимфодренажному массажу тела, вакуумным банкам и обёртываниям Aravia/Morizo — выраженный результат без синяков.",
+      "avatarUrl": "/tenants/na-massazh/images/master-zara.jpg",
+      "rating": 5.0,
+      "reviewsCount": 52,
+      "displayOrder": 2,
+      "isActive": true,
+      "serviceIds": [
+        "30000000-0000-4000-8000-000000000001",
+        "30000000-0000-4000-8000-000000000003",
+        "30000000-0000-4000-8000-000000000004",
+        "30000000-0000-4000-8000-000000000005",
+        "30000000-0000-4000-8000-000000000006",
+        "30000000-0000-4000-8000-000000000007",
+        "30000000-0000-4000-8000-000000000008",
+        "30000000-0000-4000-8000-000000000009",
+        "30000000-0000-4000-8000-000000000010",
+        "30000000-0000-4000-8000-000000000011",
+        "30000000-0000-4000-8000-000000000017",
+        "30000000-0000-4000-8000-000000000018",
+        "30000000-0000-4000-8000-000000000019",
+        "30000000-0000-4000-8000-000000000020"
+      ],
+      "schedule": [
+        { "dayOfWeek": 0, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 1, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 2, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 3, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 4, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 5, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 6, "startTime": "10:00", "endTime": "22:00", "isDayOff": false }
+      ]
+    },
+    {
+      "id": "50000000-0000-4000-8000-000000000003",
+      "name": "Гуля",
+      "title": "Топ-мастер по массажу и скульптурированию лица",
+      "specialization": "Миофасциальный, пластический и лимфодренажный массаж лица",
+      "bio": "Косметолог-эстетист с опытом 7 лет. Авторские техники миофасциального, лимфодренажного и пластического лифтинг-массажа лица, шеи, зоны декольте и головы.",
+      "avatarUrl": "/tenants/na-massazh/images/master-gulya.jpg",
+      "rating": 4.99,
+      "reviewsCount": 38,
+      "displayOrder": 3,
+      "isActive": true,
+      "serviceIds": [
+        "30000000-0000-4000-8000-000000000002",
+        "30000000-0000-4000-8000-000000000003",
+        "30000000-0000-4000-8000-000000000012",
+        "30000000-0000-4000-8000-000000000013",
+        "30000000-0000-4000-8000-000000000014",
+        "30000000-0000-4000-8000-000000000015",
+        "30000000-0000-4000-8000-000000000016",
+        "30000000-0000-4000-8000-000000000018",
+        "30000000-0000-4000-8000-000000000021",
+        "30000000-0000-4000-8000-000000000022"
+      ],
+      "schedule": [
+        { "dayOfWeek": 0, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 1, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 2, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 3, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 4, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 5, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 6, "startTime": "10:00", "endTime": "22:00", "isDayOff": false }
+      ]
+    },
+    {
+      "id": "50000000-0000-4000-8000-000000000004",
+      "name": "Алла",
+      "title": "Мастер классического и SPA-массажа",
+      "specialization": "Оздоровительный, расслабляющий и SPA-массаж тела и лица",
+      "bio": "Опыт 5 лет. Классический оздоровительный и расслабляющий массаж тела, деликатный массаж для беременных, рефлекторный массаж стоп и комплексные SPA-уходы.",
+      "avatarUrl": "/tenants/na-massazh/images/master-alla.jpg",
+      "rating": 4.98,
+      "reviewsCount": 34,
+      "displayOrder": 4,
+      "isActive": true,
+      "serviceIds": [
+        "30000000-0000-4000-8000-000000000001",
+        "30000000-0000-4000-8000-000000000002",
+        "30000000-0000-4000-8000-000000000003",
+        "30000000-0000-4000-8000-000000000004",
+        "30000000-0000-4000-8000-000000000005",
+        "30000000-0000-4000-8000-000000000012",
+        "30000000-0000-4000-8000-000000000013",
+        "30000000-0000-4000-8000-000000000016",
+        "30000000-0000-4000-8000-000000000017",
+        "30000000-0000-4000-8000-000000000018",
+        "30000000-0000-4000-8000-000000000019",
+        "30000000-0000-4000-8000-000000000020",
+        "30000000-0000-4000-8000-000000000021",
+        "30000000-0000-4000-8000-000000000022"
+      ],
+      "schedule": [
+        { "dayOfWeek": 0, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 1, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 2, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 3, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 4, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 5, "startTime": "10:00", "endTime": "22:00", "isDayOff": false },
+        { "dayOfWeek": 6, "startTime": "10:00", "endTime": "22:00", "isDayOff": false }
+      ]
+    }
+  ]
+}

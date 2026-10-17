@@ -51,7 +51,7 @@ export function ServiceCard({
               loading="lazy"
               onError={(e) => {
                 // Graceful fallback to default tenant hero image if custom image fails to load
-                (e.currentTarget as HTMLImageElement).src = getAssetUrl(tenant?.assets.hero || '/tenants/ayza-beauty-space/images/hero.jpg');
+                (e.currentTarget as HTMLImageElement).src = getAssetUrl(tenant?.assets.hero || '/tenants/na-massazh/images/hero.jpg');
               }}
             />
             {isSelected && (

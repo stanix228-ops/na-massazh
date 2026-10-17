@@ -242,7 +242,7 @@ export const BookingFormModal: React.FC<BookingFormModalProps> = ({
             <Input
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
-              placeholder="Например: желаемый дизайн, аллергия, снятие"
+              placeholder="Например: зона акцента (спина/ШВЗ), сила нажатия, пожелания"
             />
           </div>
         </div>

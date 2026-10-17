@@ -21,7 +21,7 @@ export function App() {
       <Route
         path="/"
         element={
-          <TenantProvider defaultSlug="ayza-beauty-space">
+          <TenantProvider defaultSlug="na-massazh">
             <ClientBookingPage />
           </TenantProvider>
         }
@@ -29,7 +29,7 @@ export function App() {
       <Route
         path="/b/:token"
         element={
-          <TenantProvider defaultSlug="ayza-beauty-space">
+          <TenantProvider defaultSlug="na-massazh">
             <BookingStatusPage />
           </TenantProvider>
         }
@@ -37,7 +37,7 @@ export function App() {
       <Route
         path="/owner/login"
         element={
-          <TenantProvider defaultSlug="ayza-beauty-space">
+          <TenantProvider defaultSlug="na-massazh">
             <OwnerLoginPage />
           </TenantProvider>
         }
@@ -45,7 +45,7 @@ export function App() {
       <Route
         path="/owner"
         element={
-          <TenantProvider defaultSlug="ayza-beauty-space">
+          <TenantProvider defaultSlug="na-massazh">
             <OwnerDashboardPage />
           </TenantProvider>
         }

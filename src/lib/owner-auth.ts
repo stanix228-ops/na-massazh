@@ -25,6 +25,9 @@ export function getOwnerCredentials(slug: string): OwnerCredentials {
   }
 
   // Default credentials if not yet customized
+  if (slug === 'na-massazh') {
+    return { email: 'admin@go2massage.ru', password: 'admin' };
+  }
   if (slug === 'ayza-beauty-space') {
     return { email: 'admin@ayza.kz', password: 'ayza' };
   }

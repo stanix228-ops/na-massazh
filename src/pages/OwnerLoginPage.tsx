@@ -10,11 +10,12 @@ import { LockKey, ArrowLeft, ShieldCheck } from '@phosphor-icons/react';
 import { getOwnerCredentials, verifyOwnerLogin } from '../lib/owner-auth';
 
 export function OwnerLoginPage() {
-  const { slug } = useParams<{ slug: string }>();
-  const { tenant } = useTenant();
+  const { slug: paramSlug } = useParams<{ slug: string }>();
+  const { tenant, slug: contextSlug } = useTenant();
+  const slug = paramSlug || contextSlug || 'na-massazh';
   const navigate = useNavigate();
 
-  const creds = getOwnerCredentials(slug || 'ayza-beauty-space');
+  const creds = getOwnerCredentials(slug);
   const [email, setEmail] = useState(() => creds.email);
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -58,7 +59,7 @@ export function OwnerLoginPage() {
 
     // Owner credentials verification (local / demo / offline / GitHub Pages mode)
     setTimeout(() => {
-      const isValid = verifyOwnerLogin(slug || 'ayza-beauty-space', email, password);
+      const isValid = verifyOwnerLogin(slug || 'na-massazh', email, password);
       if (isValid) {
         localStorage.setItem(`owner_session_${slug}`, JSON.stringify({ email: email.trim(), role: 'owner' }));
         navigate(`/s/${slug}/owner/`);

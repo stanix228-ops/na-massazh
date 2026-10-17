@@ -5,7 +5,9 @@ import { Badge } from '../components/ui/Badge';
 import { Card } from '../components/ui/Card';
 
 export function HomePage() {
-  const tenants = Object.values(TENANTS_REGISTRY);
+  const tenants = Object.values(TENANTS_REGISTRY).sort((a, b) =>
+    a.slug === 'na-massazh' ? -1 : b.slug === 'na-massazh' ? 1 : 0
+  );
 
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col justify-between p-4 sm:p-8 safe-top safe-bottom">
@@ -18,11 +20,11 @@ export function HomePage() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl font-extrabold font-heading text-neutral-100 tracking-tight">
-            Студии Маникюра & Nail-Бары
+            Студии Массажа, SPA & Beauty
           </h1>
 
           <p className="text-xs sm:text-sm text-neutral-400 max-w-md mx-auto leading-relaxed">
-            Единое приложение, полностью независимые студии. Каждая студия работает по персональному маршруту со своим брендингом, мастерами и ценами.
+            Единая платформа онлайн-записи для массажных кабинетов, SPA-пространств и студий красоты. Каждая студия работает со своим расписанием, прайсом и мастерами.
           </p>
         </div>
 

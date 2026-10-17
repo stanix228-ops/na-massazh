@@ -82,7 +82,7 @@ export function BookingStatusPage() {
   const handleDownloadIcs = () => {
     if (!booking || !tenant) return;
 
-    const primaryService = booking.services[0]?.name || 'Услуга маникюра';
+    const primaryService = booking.services[0]?.name || 'Сеанс массажа';
     downloadIcsFile(`booking-${booking.booking_number}`, {
       title: `${primaryService} — ${tenant.name}`,
       description: `Мастер: ${booking.master.name}\nТелефон студии: ${tenant.phone}\n${tenant.instructions || ''}`,
